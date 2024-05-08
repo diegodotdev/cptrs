@@ -33,7 +33,7 @@ export default function Nav() {
         ) : (
           <SignInButton
             mode="modal"
-            forceRedirectUrl="http://localhost:3000/dashboard"
+            forceRedirectUrl="https://cptrs.vercel.app/dashboard"
           >
             <button className="btn btn-primary btn-sm">Sign In</button>
           </SignInButton>
@@ -56,7 +56,7 @@ export default function Nav() {
               <Link href="/dashboard">Dashboard</Link>
             </li>
             <li>
-              <SignOutButton redirectUrl="http://localhost:3000">
+              <SignOutButton redirectUrl="https://cptrs.vercel.app">
                 Sign Out
               </SignOutButton>
             </li>
