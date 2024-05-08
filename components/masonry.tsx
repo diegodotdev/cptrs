@@ -17,7 +17,10 @@ export default function MasonryComponent({ images }: { images: ImageProps[] }) {
       breakpointCols={breakpointColumnsObj}
     >
       {images?.map((i) => (
-        <div className="w-full overflow-hidden rounded-lg group mb-5">
+        <div
+          className="w-full overflow-hidden rounded-lg group mb-5"
+          key={i.id}
+        >
           <Link href={`/feed/${i.id}`} className="w-full">
             <Image
               key={i.id}
