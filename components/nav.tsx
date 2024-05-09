@@ -20,7 +20,7 @@ export default function Nav() {
       <nav className="hidden md:flex items-center gap-5">
         {userId ? (
           <>
-            <SignOutButton redirectUrl="http://localhost:3000">
+            <SignOutButton redirectUrl="https://cptrs.vercel.app">
               <button className="btn btn-primary btn-sm">Sign Out</button>
             </SignOutButton>
             <Link href="/feed">
